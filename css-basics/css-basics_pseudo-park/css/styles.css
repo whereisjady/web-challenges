@@ -30,21 +30,21 @@
   */
 }
 
-.crocodile :hover {
+.crocodile:hover {
   background-color: lightblue;
 }
 
 .giraffe {
   text-align: center;
 }
-.giraffe :hover {
-  background-color: lightblue;
+.giraffe:hover {
+  background-color: lightgreen;
 }
 
 .dino {
   text-align: right;
 }
-.dino :hover {
+.dino:hover {
   background-color: lightsalmon;
 }
 /*
