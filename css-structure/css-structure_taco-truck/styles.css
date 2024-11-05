@@ -21,6 +21,7 @@ body {
   background: var(--body-bg);
 }
 
+
 footer {
   display: flex;
   flex-direction: row;
@@ -30,3 +31,5 @@ footer {
   background: var(--footer-bg);
   color: var(--footer-text);
 }
+
+
