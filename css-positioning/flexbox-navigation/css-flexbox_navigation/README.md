@@ -4,6 +4,8 @@
 
 - [ ] Navigate to your `index.html` file.
 - [ ] To create a flexbox container, which html element of the `<nav>` structure should the `navigation__menu` class be applied to?
+The Unordered List?
+
 - [ ] Next, navigate to your `styles.css` file.
 - [ ] Make sure to include the `navigation__menu` class selector.
 - [ ] As part of the `navigation__menu` class selector body, which properties do you need to include to meet the following requirements?
