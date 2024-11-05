@@ -20,3 +20,16 @@ body {
   font-family: system-ui, sans-serif;
   background: var(--body-bg);
 }
+
+
+footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: small;
+  background: var(--footer-bg);
+  color: var(--footer-text);
+}
+
+
