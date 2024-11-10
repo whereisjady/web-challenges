@@ -24,6 +24,20 @@ if (number % 2 === 0) {
 
 // Part 3: Hotdogs
 const numberOfHotdogs = 42;
+let hotdogPrice;
+
+if (numberOfHotdogs < 5) {
+  hotdogPrice = 2;
+} else if (numberOfHotdogs > 5) {
+  (hotdogPrice = 1), 5;
+} else if (numberOfHotdogs > 100 && numberOfHotdogs < 1000000) {
+  hotdogPrice = 1;
+} else if (numberOfHotdogs > 1000000) {
+  (hotdogPrice = 0), 10;
+}
+
+const totalPrice = numberOfHotdogs * hotdogPrice;
+console.log("Total price for " + numberOfHotdogs + "hotdogs: " * totalPrice);
 
 // Part 4: Daytime
 const currentHour = 12;
