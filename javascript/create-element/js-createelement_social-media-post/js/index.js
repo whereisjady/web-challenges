@@ -17,25 +17,30 @@ const body = document.querySelector("body");
 const newPost = document.createElement("article");
 newPost.classList.add("post");
 
-// // post
+// // postContent
 const postContent = document.createElement("p");
 postContent.textContent = "This is a new social media post";
 postContent.classList.add("post__content");
 
 // // footer
 const postFooter = document.createElement("footer");
-postContent.classList.add("post__footer");
+postFooter.classList.add("post__footer");
 
-// // // span & button
+// // // username & like button
 const postUsername = document.createElement("span");
-postContent.textContent = "@username";
-postContent.classList.add("post__username");
+postUsername.textContent = "@username";
+postUsername.classList.add("post__username");
 
 const postButton = document.createElement("button");
-postContent.classList.add("post__button");
+postButton.textContent = "♥ Like";
+postButton.classList.add("post__button");
+postButton.addEventListener("click", handleLikeButtonClick);
 
-footer.appendChild(span);
-footer.appendChild(button);
-post.appendChild(footer);
-newPost.appendChild(post);
+//// appending
+postFooter.appendChild(postUsername);
+postFooter.appendChild(postButton);
+
+newPost.appendChild(postContent);
+newPost.appendChild(postFooter);
+
 body.appendChild(newPost);
