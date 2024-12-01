@@ -7,7 +7,7 @@ export default function Counter() {
   return (
     <div className="counter">
       <h1>Colored Number</h1>
-      <ColoredNumber value={0} />
+      <ColoredNumber value={count} />
       <div className="counter__buttons-container">
         <button
           type="button"
