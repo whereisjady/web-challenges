@@ -1,18 +1,18 @@
 import "./EntryForm.css";
 import Button from "../Button";
 
-export default function EntryForm(onAddEntry) {
+export default function EntryForm({ onAddEntry }) {
   function handleSubmit(event) {
     event.preventDefault();
     const formData = new FormData(event.target);
     const data = Object.fromEntries(formData);
 
-    event.target.reset();
-
     onAddEntry({
       motto: data.motto,
       notes: data.notes,
     });
+
+    event.target.reset();
   }
 
   return (
