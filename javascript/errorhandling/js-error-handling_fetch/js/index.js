@@ -10,7 +10,6 @@ async function fetchUserData(url) {
 
     return await response.json();
   } catch (error) {
-    console.log(response);
     return { error: error.message };
   }
 }
