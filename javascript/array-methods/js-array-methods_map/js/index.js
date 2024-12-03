@@ -25,7 +25,7 @@ const cards = [
 ];
 
 const lowerCaseAnswers = cards.map((card) => {
-  console.log(card);
+  //console.log(card);
 
   return card.answer.toLowerCase();
 }); // ['as often as you like.', ...]
