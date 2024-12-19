@@ -10,10 +10,16 @@ export default function App({ Component, pageProps }) {
     { id: 3, name: "Bathroom", isOn: true },
   ]);
 
+  function toggleLight(id) {
+    setLights(
+      lights.map((light) => {
+        if (light.id === id) {
+
   function toggleLight(name) {
     setLights(
       lights.map((light) => {
         if (light.name === name) {
+ 
           return { ...light, isOn: !light.isOn };
         }
         return light;
