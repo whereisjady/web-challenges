@@ -12,6 +12,7 @@ const StyledLights = styled.ul`
 `;
 
 export default function Lights({ lights, toggleLight }) {
+  console.log(lights);
   return (
     <StyledLights>
       {lights.map((light) => (
